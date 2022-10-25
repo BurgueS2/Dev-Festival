@@ -20,4 +20,4 @@
 
 ## Finalização
 
-<img src="assets/img/Captura de tela finalisacao.png" width="1000" height="600">
+<img src="assets/img/Captura de tela finalização.png">
