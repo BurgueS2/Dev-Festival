@@ -14,12 +14,7 @@ html {
 
 body {
     background-color: rgb(1, 1, 28);
-    transition: background 0.2s linear;
-}
-
-.clear {
-    background: rgb(255, 255, 255);
-    color: rgb(255, 0, 0);
+    transition: background 0.4s linear;
 }
 
 img {
@@ -391,7 +386,46 @@ button {
     margin-top: 30px;
 }
 
+#rodape-dois {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+#rodape .flex-box, #rodape-dois .flex-box {
+    background-color: rgb(0, 0, 53);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+}
+
+#rodape .menu-liste, #rodape-dois .menu-liste {
+    display: flex;
+    gap: 36px;
+}
+
+#rodape .content p, #rodape-dois .content p {
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+#rodape span, #rodape-dois span {
+    color: rgb(165, 165, 255);
+}
+
+
+
+
 /* clear mode */
+
+.clear {
+    background: rgb(216, 216, 252);
+    transition: 0.4s;
+}
 
 .checkbox {
     opacity: 0;
@@ -399,7 +433,7 @@ button {
 }
 
 .label {
-    background-color: black;
+    background-color: rgb(165, 165, 255);
     border-radius: 50px;
     cursor: pointer;
 
@@ -415,17 +449,22 @@ button {
 }
 
 .label .ball {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
     border-radius: 50%;
     position: absolute;
     top: 2px;
     left: 2px;
-
     height: 22px;
     width: 22px;
 
     transform: translateX(0px);
-    transition: transform 0.2s linear;
+    transition: transform 0.3s linear;
+}
+
+.clear .label .ball {
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s linear;
 }
 
 .checkbox:checked + .label .ball {
@@ -433,7 +472,7 @@ button {
 }
 
 .fa-moon {
-    color: rgb(204, 204, 204);
+    color: rgb(0, 0, 85);
 }
 
 .fa-sun {
@@ -441,22 +480,69 @@ button {
 }
 
 .clear .title {
-    font-family: 'Poppins', sans-serif;
-
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.473);
 
     line-height: 1.2;
-    transition: 0.4s;
+    transition: 0.4s linear;
 }
 
 .clear .content-box p {
-    font-family: 'poppins', sans-serif;
-    font-size: 1.2em;
     font-weight: 400;
-
-    text-align: justify;
-    transition: 0.4s;
+    transition: 0.4s linear;
 
     color: rgb(0, 0, 0);
+}
+
+.clear #carrinho .flex-box .ticket-list .ticket .controls button {
+    color: rgb(165, 165, 255);
+    border-color: rgb(165, 165, 255);
+    transition: 0.4s;
+}
+
+.clear #finalizacao .flex-box .ticket .quantity-box {
+    border-color: rgb(0, 0, 255);
+    transition: 0.4s;
+}
+
+/* Media Query */
+
+@media (max-width: 970px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+        background-color: rgb(165, 165, 255);
+
+    }
+
+    .menu ul:active {
+        transform: translateX(0);
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu ul a {
+        font-size: 18px;
+        color: white;
+    }
+
+    .menu ul button {
+        background-color: brown;
+        font-size: 18px;
+        margin: 10px;
+    }
 }
