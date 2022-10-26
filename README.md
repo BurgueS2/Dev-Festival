@@ -25,7 +25,3 @@
 ## ● Finalização  🔚
 
 ![Captura de tela finalização](https://user-images.githubusercontent.com/106715331/198149264-eeb5b43a-aa29-48b9-9e6d-9d6d39836256.png)
-
-## ● Acesse o Site 👇
-
-[<img src="assets/LogoKenzieFestival.png">](file:///C:/Users/felip/OneDrive%20-%2065j7d0/Documentos/GitHub/HTML/Dev%20Festival/index.html)
