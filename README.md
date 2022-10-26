@@ -1,23 +1,31 @@
 # < Dev /> Festival
 
-## Início
+## ● Início 🏠
 
-<img src="assets/img/Captura de tela inicio.png">
+![Captura de tela inicio](https://user-images.githubusercontent.com/106715331/198149267-25c3421e-3d13-49d3-929f-03bd1ddb97b3.png)
 
-### Modo Clean
+### ● Início Modo Clean 🏡
 
-* Todo o site tem o modo clean.
+* Todo site tem o modo **Dark/Clean**
 
-<img src="assets/img/Captura de tela inicio-clean.png">
+![Captura de tela inicio-clean](https://user-images.githubusercontent.com/106715331/198149292-f4e66f41-0aa5-4647-a311-c6210d761f69.png)
 
-## Sobre
+## ● Sobre 📖
 
-<img src="assets/img/Captura de tela inicio-sobre.png">
- 
-## Carrinho
+![Captura de tela sobre](https://user-images.githubusercontent.com/106715331/198149312-d429a9fa-ef1b-46c2-918b-65007fc57749.png)
 
-<img src="assets/img/Captura de tela carrinho.png">
+## ● Artistas 🧑‍🎨
 
-## Finalização
+![Captura de tela artistas](https://user-images.githubusercontent.com/106715331/198149245-988f2e37-9a2b-4eb5-9ef0-c6a4faef07e7.png)
 
-<img src="assets/img/Captura de tela finalização.png">
+## ● Carrinho 🛒
+
+![Captura de tela carrinho](https://user-images.githubusercontent.com/106715331/198149260-6821614a-7976-4e73-8f41-6d055ec7f014.png)
+
+## ● Finalização  🔚
+
+![Captura de tela finalização](https://user-images.githubusercontent.com/106715331/198149264-eeb5b43a-aa29-48b9-9e6d-9d6d39836256.png)
+
+## ● Acesse o Site 👇
+
+[![LogoKenzieFestival](https://user-images.githubusercontent.com/106715331/198150707-c297b5f7-1d3c-48aa-b62c-17ca3cdae4fd.png)](file:///C:/Users/felip/OneDrive%20-%2065j7d0/Documentos/GitHub/HTML/Dev%20Festival/index.html)

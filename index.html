@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Dev Festival</title>
     </head>
     <body>
@@ -15,15 +16,15 @@
                     <a href="#principal" target="_self" rel="noopener noreferrer">
                         <img src="assets/LogoKenzieFestival.png" alt="Logo da Kenzie Festival" class="logo">
                     </a>
-                
-                    <nav class="menu">
+
+                    <nav class="menu" id="menu">
                         <ul class="menu-lista">
                             <li><a href="#principal" target="_self">Início</a></li>
                             <li><a href="#sobre" target="_self">Sobre</a></li>
                             <li><a href="#artistas" target="_self">Artistas</a></li>
                         </ul>
 
-                        <a href="carrinho.html" target="_self" class="btn outline">Quero meu Ingresso</a>
+                        <a href="carrinho.html" target="_self" id="btn-header" class="btn outline">Quero meu Ingresso</a>
 
                         <div>
                             <input type="checkbox" name="" id="chk" class="checkbox">
@@ -36,6 +37,10 @@
                                 <div class="ball"></div>
                             </label>
                         </div>
+
+                        <div class="menu-icon">
+                            <span id="burguer" class="material-symbols-outlined">menu</span>
+                        </div>
                     </nav>
 
                     <!-- <button class="menu-icon"><img src="assets/Vector.png" alt="Modo Dark"></button> -->
@@ -43,76 +48,79 @@
             </div>
         </header>
 
-        <section id="principal">
-            <div class="container">
-                <div class="flex-box">
-                    <div class="left">
-                        <img src="assets/Patinho2.png" alt="Patinho">
+        <main>
+            <section id="principal">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="left">
+                            <img src="assets/Patinho2.png" alt="Patinho">
 
-                        <h1 class="title one"><span class="blue-text">&lt;Dev /&gt;</span> Festival</h1>
+                            <h1 class="title one"><span class="blue-text">&lt;Dev /&gt;</span> Festival</h1>
 
-                        <div class="pad30-top">
-                            <a href="carrinho.html" target="_self" class="btn solid">Quero Meu Ingresso</a>
+                            <div class="pad30-top">
+                                <a href="carrinho.html" target="_self" class="btn solid">Quero Meu Ingresso</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="right">
-                        <img src="assets/MoçaOuvindoMusica.png" alt="Moça Ouvindo Musica">
-                    </div>
-                </div> 
-            </div>
-        </section>
+                        <div class="right">
+                            <img src="assets/MoçaOuvindoMusica.png" alt="Moça Ouvindo Musica" class="imag">
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
         
-        <section id="sobre">
-            <div class="container">
-                <div class="flex-box">
-                    <div class="left">
-                        <img src="assets/MoçaOuvindoMusica2.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido">
-                    </div>
-
-                    <div class="right">
-                        <h2 class="title two pad30-bottom">Sobre o Festival</h2>
-
-                        <div class="content-box">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, adipisci consequatur, quod maxime ex debitis officia delectus alias dolores veritatis ratione maiores possimus recusandae voluptatibus vitae quas temporibus! Eligendi, odit?
-                            </p>
-
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quia incidunt illum dolor dicta aspernatur temporibus ipsa. Amet sequi nisi vel. Tenetur doloribus, rerum in cumque soluta omnis magni nesciunt.
-                            </p>
-
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aut, omnis atque vero similique ipsum eveniet modi quaerat possimus? Asperiores iusto fugiat porro magni nemo magnam deserunt earum cum! Rem!
-                            </p>
+            <section id="sobre">
+                <div class="container">
+                    <div class="flex-box">
+                        <div class="left">
+                            <img src="assets/MoçaOuvindoMusica2.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido" class="imag">
+                        </div>
+    
+                        <div class="right">
+                            <h2 class="title two pad30-bottom">Sobre o Festival</h2>
+    
+                            <div class="content-box">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, adipisci consequatur, quod maxime ex debitis officia delectus alias dolores veritatis ratione maiores possimus recusandae voluptatibus vitae quas temporibus! Eligendi, odit?
+                                </p>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quia incidunt illum dolor dicta aspernatur temporibus ipsa. Amet sequi nisi vel. Tenetur doloribus, rerum in cumque soluta omnis magni nesciunt.
+                                </p>
+    
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aut, omnis atque vero similique ipsum eveniet modi quaerat possimus? Asperiores iusto fugiat porro magni nemo magnam deserunt earum cum! Rem!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            
+            <section id="artistas">
+                <div class="container">
+                    <h2 class="title two center pad30-bottom">Artistas</h2>
+    
+                    <ul class="lista-de-artistas">
+                        <li><img src="assets/Artista1.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido"></li>
+                        <li><img src="assets/Artista2.png" alt="Mulher Ouvindo Musica Dançando"></li>
+                        <li><img src="assets/Artista3.png" alt="Moça Ouvindo Musica Deitada"></li>
+                        <li><img src="assets/Artista1.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido"></li>
+                        <li><img src="assets/Artista2.png" alt="Mulher Ouvindo Musica Dançando"></li>
+                        <li><img src="assets/Artista3.png" alt="Moça Ouvindo Musica Deitada"></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
         
-        <section id="artistas">
-            <div class="container">
-                <h2 class="title two center pad30-bottom">Artistas</h2>
-
-                <ul class="lista-de-artistas">
-                    <li><img src="assets/Artista1.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido"></li>
-                    <li><img src="assets/Artista2.png" alt="Mulher Ouvindo Musica Dançando"></li>
-                    <li><img src="assets/Artista3.png" alt="Moça Ouvindo Musica Deitada"></li>
-                    <li><img src="assets/Artista1.png" alt="Moça Ouvindo Musica com Fone-de-Ouvido"></li>
-                    <li><img src="assets/Artista2.png" alt="Mulher Ouvindo Musica Dançando"></li>
-                    <li><img src="assets/Artista3.png" alt="Moça Ouvindo Musica Deitada"></li>
-                </ul>
-            </div>
-        </section>
-
         <footer id="rodape">
             <div class="conteiner">
                 <div class="flex-box">
                     <img src="assets/Patinho.png" alt="Patinho">
 
                     <div class="content">
-                        <p class="">© Copyright <span id="ticket">&lt;Dev /&gt;</span> Festival</p>
+                        <p class="">© Copyright 2022 <span id="ticket">&lt;Dev /&gt;</span> Festival</p>
                     </div>
 
                     <ul class="menu-liste">
