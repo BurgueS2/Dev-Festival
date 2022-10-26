@@ -28,4 +28,4 @@
 
 ## ● Acesse o Site 👇
 
-[![LogoKenzieFestival](https://user-images.githubusercontent.com/106715331/198150707-c297b5f7-1d3c-48aa-b62c-17ca3cdae4fd.png)](file:///C:/Users/felip/OneDrive%20-%2065j7d0/Documentos/GitHub/HTML/Dev%20Festival/index.html)
+[<img src="assets/LogoKenzieFestival.png">](file:///C:/Users/felip/OneDrive%20-%2065j7d0/Documentos/GitHub/HTML/Dev%20Festival/index.html)
