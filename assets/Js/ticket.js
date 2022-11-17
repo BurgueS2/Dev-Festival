@@ -1,7 +1,6 @@
-console.log('Página Final!!!')
-
 const nome = window.localStorage.getItem('nome')
 const email = window.localStorage.getItem('email')
+
 const quantityTickets = window.localStorage.getItem('quantityTickets')
 
 const nomeLabel = document.getElementById('nome')

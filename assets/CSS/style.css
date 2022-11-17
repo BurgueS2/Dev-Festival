@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
 html {
@@ -33,7 +34,33 @@ a {
     text-decoration: none;
 }
 
-/* Global Padding */
+/*
+ScrollBar
+*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px gray; 
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(165, 165, 255); 
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(128, 128, 196); 
+    transition: 0.4s;
+}
+
+/*
+Global Padding
+*/
 
 .pad10-top {
     padding-top: 10px;
@@ -59,7 +86,9 @@ a {
     padding-bottom: 30px;
 }
 
-/* Header */
+/*
+Header
+*/
 
 #header {
     background-color: rgb(1, 1, 28);
@@ -112,7 +141,55 @@ a {
     color: rgb(165, 165, 255);
 }
 
-/* Tipografias */
+/*
+Menu Mobile
+*/
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-items {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(1, 1, 28);
+    border-bottom: 2px solid rgb(165, 165, 255);
+    display: block;
+    opacity: 0;
+    transition: 0.4s;
+    font-size: 2em;
+    padding: 15px;
+}
+
+.menu-mobile .show {
+    display: block;
+    opacity: 1;
+}
+
+.menu-mobile .hidde, .menu-items {
+    display: none;
+    opacity: 0;
+}
+
+.menu-items a {
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.menu-items a:hover {
+    color: rgb(165, 165, 255);
+    transition: 0.4s;
+}
+
+/*
+Tipografias
+*/
 
 .title {
     font-family: 'Poppins', sans-serif;
@@ -160,6 +237,8 @@ a {
     font-size: 1.2em;
     font-weight: 400;
 
+    margin: 20px;
+
     text-align: justify;
 
     color: rgb(255, 255, 255);
@@ -174,7 +253,9 @@ a {
     color: rgb(165, 165, 255);
 }
 
-/* Botoes */
+/*
+Botoes
+*/
 
 button {
     background-color: transparent;
@@ -236,16 +317,20 @@ button {
     border: 2px solid rgb(204, 204, 204);
 }
 
-/* Grid */
+/*
+Grid
+*/
 
 .container {
-    /* padding: 10px;*/
+    /* padding: 10px; */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Seções */
+/*
+Seções
+*/
 
 #principal {
     padding: 100px 0;
@@ -273,6 +358,11 @@ button {
 
 #sobre .flex-box .left img {
     width: 100%;
+}
+
+#title-sobre {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 #artistas {
@@ -405,6 +495,12 @@ button {
     margin-top: 30px;
 }
 
+#rodape, #rodape-dois {
+    background-color: rgb(1, 1, 28);
+    border-top: solid 1px rgb(0, 0, 85);
+    transition: 0.4s;
+}
+
 #rodape-dois {
     bottom: 0;
     position: fixed;
@@ -412,9 +508,8 @@ button {
 }
 
 #rodape .flex-box, #rodape-dois .flex-box {
-    background-color: rgb(0, 0, 53);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 80px;
     padding: 30px;
@@ -436,7 +531,18 @@ button {
     color: rgb(165, 165, 255);
 }
 
-/* clear mode */
+img.footer-img {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+img.footer-img:hover {
+    filter: grayscale(0);
+}
+
+/*
+Clear Mode
+*/
 
 .clear {
     background: rgb(216, 216, 252);
@@ -526,43 +632,12 @@ button {
     transition: 0.4s;
 }
 
-/* Media Query */
+.clear #rodape, .clear #rodape-dois {
+    background-color: rgb(0, 0, 60);
+    transition: 0.4s;
+}
 
-@media (max-width: 970px) {
-    .menu-icon {
-        display: flex;
-    }
-
-    nav ul {
-        position: fixed;
-        height: 100%;
-        width: 60%;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        transition: 0.3s ease-in;
-        background-color: rgb(165, 165, 255);
-    }
-
-    .menu ul:active {
-        transform: translateX(0);
-    }
-
-    .menu ul li {
-        padding: 10px;
-    }
-
-    .menu ul a {
-        font-size: 18px;
-        color: white;
-    }
-
-    .menu ul button {
-        background-color: brown;
-        font-size: 18px;
-        margin: 10px;
-    }
+.clear::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 20px rgb(0, 0, 0);
+    border-radius: 0;
 }

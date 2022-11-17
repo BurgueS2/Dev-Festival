@@ -1,10 +1,22 @@
+var el = document.querySelector('.menu-mobile-icon')
+
+el.addEventListener('click', () => {
+    var menuItems = document.querySelector('.menu-items')
+    if(menuItems.classList.contains('show')){
+        menuItems.classList.add('hide')
+        menuItems.classList.remove('show')
+    }
+    else{
+        menuItems.classList.add('show')
+        menuItems.classList.remove('hide')
+    }
+})
+
 const chk = document.getElementById('chk')
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('clear')
 })
-
-console.log('Página do Carrinho!')
 
 const buyButton = document.getElementById('buy-button')
 const cartForm = document.getElementById('cart-form')
@@ -12,19 +24,16 @@ const cartForm = document.getElementById('cart-form')
 const addTicket = document.getElementById('add-ticket')
 const removeTicket = document.getElementById('remove-ticket')
 const ticket = document.getElementById('ticket')
-
 const ticketPrice = document.getElementById('ticket-price')
 
 addTicket.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log('Adicionando ticket')
     ticket.innerText = parseInt(ticket.innerText)+1
     ticketPrice.innerText = parseInt(ticket.innerText)*90
 })
 
 removeTicket.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log('Removendo ticket')
     if(parseInt(ticket.innerText) !== 1) {
         ticket.innerText = parseInt(ticket.innerText)-1
         ticketPrice.innerText = parseInt(ticket.innerText)*90

@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1200px) {
+
+    .flex-box {
+        padding: 0 20px;
+    }
+
+    #artistas {
+        padding: 50px 20px;
+    }
+    
+    #title-sobre {
+        font-size: 3em;
+    }
+
+    .title.two {
+        font-size: 3em;
+    }
+
+    #h2-artistas {
+        font-size: 4em;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    /* Header */
+    
+    nav li, #btn-header {
+        display: none;
+    }
+    
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile span {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 60px;
+        margin-top: 8px;
+    }
+
+    .btn.outline {
+        display: inline-flex;
+        margin: 20px;
+    }
+
+    /* Rodapé */
+
+    #rodape .content p, #rodape-dois .content p {
+        font-size: 1em;
+    }
+
+    img.footer-logo {
+        width: 64px;
+    }
+
+    #rodape .flex-box, #rodape-dois .flex-box {
+        gap: 25px;
+    }
+
+    #rodape .menu-liste, #rodape-dois .menu-liste {
+        gap: 25px;
+    }
+
+    /* Carrinho */
+
+    #carrinho .flex-box {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .title.two {
+        text-align: center;
+    }
+
+    .title.three {
+        text-align: center;
+    }
+
+    /* Finalização */
+
+    #finalizacao .flex-box .ticket {
+        min-width: 735px;
+    }
+
+    .title.two {
+        font-size: 2.5em;
+    }
+
+    .title.paragraph.one {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    #principal .flex-box {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .pad30-top {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sobre .flex-box {
+        flex-direction: column-reverse;
+    }
+
+    #title-sobre {
+        font-size: 2.5em;
+    }
+
+    #artistas .lista-de-artistas {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* Finalização */
+    
+    .title.two {
+        font-size: 1.5em;
+    }
+
+    #finalizacao .flex-box .ticket {
+        min-width: 635px;
+        min-height: 335px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    #rodape .flex-box, #rodape-dois .flex-box {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-img {
+        width: 50px;
+    }
+
+    /* Carrinho */
+
+    #carrinho .flex-box .ticket-list .ticket {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carrinho .flex-box .ticket-list .ticket .controls {
+        margin: 20px;
+        justify-content: center;
+    }
+
+    /* Finalização */
+    
+    #finalizacao .flex-box .ticket {
+        min-width: 400px;
+        min-height: 366px;
+    }
+
+}
+
+@media screen and (max-width: 445px) {
+    
+    .flex-box {
+        padding: 0 10px;
+    }
+
+    /* Carrinho */
+
+    .title.two {
+        font-size: 1.5em;
+    }
+
+    .title.four {
+        font-size: 12px;
+    }
+
+    /* Finalização */
+    
+    #finalizacao .flex-box .ticket{
+        min-height: 325px;
+    }
+
+    #finalizacao .flex-box .ticket img {
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    
+    .flex-box {
+        padding: 0;
+    }
+    
+    .title.one {
+        font-size: 4em;
+    }
+
+    .flex-box {
+        padding: 0 10px;
+    }
+
+    .label {
+        display: none;
+    }
+
+    #rodape .content p, #rodape-dois .content p {
+        font-size: 0.7em;
+    }
+
+    .footer-img {
+        width: 40px;
+    }
+    
+}
