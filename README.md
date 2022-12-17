@@ -26,7 +26,7 @@
 
 ![Captura de tela finalização](https://user-images.githubusercontent.com/106715331/198149264-eeb5b43a-aa29-48b9-9e6d-9d6d39836256.png)
 
-## ● Acesse o Site 📄
+## ● Acesse o Site 📄 pelo GitHub
 
 [![LogoKenzieFestival](https://user-images.githubusercontent.com/106715331/199087125-05b8a5c3-edf0-43f9-90ab-de4b6ff3d7de.png)
 ](https://burgues2.github.io/Dev-Festival/)
